@@ -99,4 +99,4 @@ tidy <- tbl_df(data_ms) %>%
   summarise(mean=mean(value))
 
 # Write the tidy data to a file
-write.csv(tidy, "tidy.csv", row.names=FALSE)
+write.table(tidy, "tidy.txt", row.names=FALSE)
